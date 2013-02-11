@@ -14,8 +14,7 @@
 		E15076F616C95F8800D55EDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076F516C95F8700D55EDF /* main.m */; };
 		E15076FA16C95F8800D55EDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076F916C95F8800D55EDF /* AppDelegate.m */; };
 		E15076FD16C95F8800D55EDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076FC16C95F8800D55EDF /* ViewController.m */; };
-		E150770016C95F8800D55EDF /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15076FE16C95F8800D55EDF /* ViewController_iPhone.xib */; };
-		E150770316C95F8800D55EDF /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E150770116C95F8800D55EDF /* ViewController_iPad.xib */; };
+		E150770016C95F8800D55EDF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15076FE16C95F8800D55EDF /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +30,7 @@
 		E15076F916C95F8800D55EDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E15076FB16C95F8800D55EDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E15076FC16C95F8800D55EDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E15076FF16C95F8800D55EDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		E150770216C95F8800D55EDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		E15076FF16C95F8800D55EDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +81,7 @@
 				E15076F916C95F8800D55EDF /* AppDelegate.m */,
 				E15076FB16C95F8800D55EDF /* ViewController.h */,
 				E15076FC16C95F8800D55EDF /* ViewController.m */,
-				E15076FE16C95F8800D55EDF /* ViewController_iPhone.xib */,
-				E150770116C95F8800D55EDF /* ViewController_iPad.xib */,
+				E15076FE16C95F8800D55EDF /* ViewController.xib */,
 				E15076F016C95F8700D55EDF /* Supporting Files */,
 			);
 			path = "Grinnell-Helpdesk-iOS";
@@ -152,8 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E15076F416C95F8700D55EDF /* InfoPlist.strings in Resources */,
-				E150770016C95F8800D55EDF /* ViewController_iPhone.xib in Resources */,
-				E150770316C95F8800D55EDF /* ViewController_iPad.xib in Resources */,
+				E150770016C95F8800D55EDF /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,20 +177,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E15076FE16C95F8800D55EDF /* ViewController_iPhone.xib */ = {
+		E15076FE16C95F8800D55EDF /* ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E15076FF16C95F8800D55EDF /* en */,
 			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		E150770116C95F8800D55EDF /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E150770216C95F8800D55EDF /* en */,
-			);
-			name = ViewController_iPad.xib;
+			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,6 +276,7 @@
 				E150770816C95F8800D55EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

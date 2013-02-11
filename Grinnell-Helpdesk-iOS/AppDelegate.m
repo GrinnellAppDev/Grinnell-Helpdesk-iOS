@@ -3,7 +3,7 @@
 //  Grinnell-Helpdesk-iOS
 //
 //  Created by Colin Tremblay on 2/11/13.
-//  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2013 __GrinnellAppDev__. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -19,11 +19,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
-    } else {
+    //if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+   /* } else {
         self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-    }
+    }*/
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
