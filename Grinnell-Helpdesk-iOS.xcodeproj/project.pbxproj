@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E15076EA16C95F8700D55EDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076E916C95F8700D55EDF /* UIKit.framework */; };
+		E15076EC16C95F8700D55EDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076EB16C95F8700D55EDF /* Foundation.framework */; };
+		E15076EE16C95F8700D55EDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076ED16C95F8700D55EDF /* CoreGraphics.framework */; };
+		E15076F416C95F8700D55EDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E15076F216C95F8700D55EDF /* InfoPlist.strings */; };
+		E15076F616C95F8800D55EDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076F516C95F8700D55EDF /* main.m */; };
+		E15076FA16C95F8800D55EDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076F916C95F8800D55EDF /* AppDelegate.m */; };
+		E15076FD16C95F8800D55EDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076FC16C95F8800D55EDF /* ViewController.m */; };
+		E150770016C95F8800D55EDF /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15076FE16C95F8800D55EDF /* ViewController_iPhone.xib */; };
+		E150770316C95F8800D55EDF /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E150770116C95F8800D55EDF /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E15076E516C95F8700D55EDF /* Grinnell-Helpdesk-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grinnell-Helpdesk-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15076E916C95F8700D55EDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E15076EB16C95F8700D55EDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E15076ED16C95F8700D55EDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E15076F116C95F8700D55EDF /* Grinnell-Helpdesk-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Grinnell-Helpdesk-iOS-Info.plist"; sourceTree = "<group>"; };
+		E15076F316C95F8700D55EDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E15076F516C95F8700D55EDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E15076F716C95F8800D55EDF /* Grinnell-Helpdesk-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grinnell-Helpdesk-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		E15076F816C95F8800D55EDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E15076F916C95F8800D55EDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E15076FB16C95F8800D55EDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E15076FC16C95F8800D55EDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E15076FF16C95F8800D55EDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		E150770216C95F8800D55EDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E15076E216C95F8700D55EDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15076EA16C95F8700D55EDF /* UIKit.framework in Frameworks */,
+				E15076EC16C95F8700D55EDF /* Foundation.framework in Frameworks */,
+				E15076EE16C95F8700D55EDF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E15076DA16C95F8600D55EDF = {
+			isa = PBXGroup;
+			children = (
+				E15076EF16C95F8700D55EDF /* Grinnell-Helpdesk-iOS */,
+				E15076E816C95F8700D55EDF /* Frameworks */,
+				E15076E616C95F8700D55EDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E15076E616C95F8700D55EDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E15076E516C95F8700D55EDF /* Grinnell-Helpdesk-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E15076E816C95F8700D55EDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15076E916C95F8700D55EDF /* UIKit.framework */,
+				E15076EB16C95F8700D55EDF /* Foundation.framework */,
+				E15076ED16C95F8700D55EDF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E15076EF16C95F8700D55EDF /* Grinnell-Helpdesk-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E15076F816C95F8800D55EDF /* AppDelegate.h */,
+				E15076F916C95F8800D55EDF /* AppDelegate.m */,
+				E15076FB16C95F8800D55EDF /* ViewController.h */,
+				E15076FC16C95F8800D55EDF /* ViewController.m */,
+				E15076FE16C95F8800D55EDF /* ViewController_iPhone.xib */,
+				E150770116C95F8800D55EDF /* ViewController_iPad.xib */,
+				E15076F016C95F8700D55EDF /* Supporting Files */,
+			);
+			path = "Grinnell-Helpdesk-iOS";
+			sourceTree = "<group>";
+		};
+		E15076F016C95F8700D55EDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E15076F116C95F8700D55EDF /* Grinnell-Helpdesk-iOS-Info.plist */,
+				E15076F216C95F8700D55EDF /* InfoPlist.strings */,
+				E15076F516C95F8700D55EDF /* main.m */,
+				E15076F716C95F8800D55EDF /* Grinnell-Helpdesk-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E15076E416C95F8700D55EDF /* Grinnell-Helpdesk-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E150770616C95F8800D55EDF /* Build configuration list for PBXNativeTarget "Grinnell-Helpdesk-iOS" */;
+			buildPhases = (
+				E15076E116C95F8700D55EDF /* Sources */,
+				E15076E216C95F8700D55EDF /* Frameworks */,
+				E15076E316C95F8700D55EDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Grinnell-Helpdesk-iOS";
+			productName = "Grinnell-Helpdesk-iOS";
+			productReference = E15076E516C95F8700D55EDF /* Grinnell-Helpdesk-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E15076DC16C95F8600D55EDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = E15076DF16C95F8600D55EDF /* Build configuration list for PBXProject "Grinnell-Helpdesk-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E15076DA16C95F8600D55EDF;
+			productRefGroup = E15076E616C95F8700D55EDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E15076E416C95F8700D55EDF /* Grinnell-Helpdesk-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E15076E316C95F8700D55EDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15076F416C95F8700D55EDF /* InfoPlist.strings in Resources */,
+				E150770016C95F8800D55EDF /* ViewController_iPhone.xib in Resources */,
+				E150770316C95F8800D55EDF /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E15076E116C95F8700D55EDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15076F616C95F8800D55EDF /* main.m in Sources */,
+				E15076FA16C95F8800D55EDF /* AppDelegate.m in Sources */,
+				E15076FD16C95F8800D55EDF /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E15076F216C95F8700D55EDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E15076F316C95F8700D55EDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E15076FE16C95F8800D55EDF /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E15076FF16C95F8800D55EDF /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		E150770116C95F8800D55EDF /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E150770216C95F8800D55EDF /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E150770416C95F8800D55EDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E150770516C95F8800D55EDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E150770716C95F8800D55EDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grinnell-Helpdesk-iOS/Grinnell-Helpdesk-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Grinnell-Helpdesk-iOS/Grinnell-Helpdesk-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E150770816C95F8800D55EDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grinnell-Helpdesk-iOS/Grinnell-Helpdesk-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Grinnell-Helpdesk-iOS/Grinnell-Helpdesk-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E15076DF16C95F8600D55EDF /* Build configuration list for PBXProject "Grinnell-Helpdesk-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E150770416C95F8800D55EDF /* Debug */,
+				E150770516C95F8800D55EDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E150770616C95F8800D55EDF /* Build configuration list for PBXNativeTarget "Grinnell-Helpdesk-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E150770716C95F8800D55EDF /* Debug */,
+				E150770816C95F8800D55EDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E15076DC16C95F8600D55EDF /* Project object */;
+}
