@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSMutableArray *ticketArray;
+}
+
+- (void)newIssue:(id)sender;
+- (void)call:(id)sender;
+
+@property (nonatomic, weak) IBOutlet UITableView *theTableView;
+@property (nonatomic, weak) IBOutlet UIImageView *noIssueImage;
+@property (nonatomic, strong) NSString *cellIdentifier;
 
 @end

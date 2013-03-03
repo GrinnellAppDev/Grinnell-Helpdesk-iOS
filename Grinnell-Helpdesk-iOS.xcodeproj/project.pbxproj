@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B53F04616E3CF4C00647664 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B53F04516E3CF4C00647664 /* Default-568h@2x.png */; };
+		8B53F04916E3D0F900647664 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B53F04816E3D0F900647664 /* Ticket.m */; };
+		8B53F04D16E3D64000647664 /* AddTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B53F04B16E3D64000647664 /* AddTicketViewController.m */; };
+		8B53F04E16E3D64000647664 /* AddTicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B53F04C16E3D64000647664 /* AddTicketViewController.xib */; };
+		8B53F05216E3D65000647664 /* TicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B53F05016E3D65000647664 /* TicketViewController.m */; };
+		8B53F05316E3D65000647664 /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B53F05116E3D65000647664 /* TicketViewController.xib */; };
+		8B53F05B16E3DFA900647664 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B53F05A16E3DFA900647664 /* phone.png */; };
 		E15076EA16C95F8700D55EDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076E916C95F8700D55EDF /* UIKit.framework */; };
 		E15076EC16C95F8700D55EDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076EB16C95F8700D55EDF /* Foundation.framework */; };
 		E15076EE16C95F8700D55EDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076ED16C95F8700D55EDF /* CoreGraphics.framework */; };
@@ -18,6 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B53F04516E3CF4C00647664 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8B53F04716E3D0F900647664 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		8B53F04816E3D0F900647664 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		8B53F04A16E3D64000647664 /* AddTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTicketViewController.h; sourceTree = "<group>"; };
+		8B53F04B16E3D64000647664 /* AddTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTicketViewController.m; sourceTree = "<group>"; };
+		8B53F04C16E3D64000647664 /* AddTicketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddTicketViewController.xib; sourceTree = "<group>"; };
+		8B53F04F16E3D65000647664 /* TicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketViewController.h; sourceTree = "<group>"; };
+		8B53F05016E3D65000647664 /* TicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketViewController.m; sourceTree = "<group>"; };
+		8B53F05116E3D65000647664 /* TicketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketViewController.xib; sourceTree = "<group>"; };
+		8B53F05A16E3DFA900647664 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = Images/phone.png; sourceTree = "<group>"; };
 		E15076E516C95F8700D55EDF /* Grinnell-Helpdesk-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grinnell-Helpdesk-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15076E916C95F8700D55EDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E15076EB16C95F8700D55EDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B53F05516E3D99E00647664 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B53F05A16E3DFA900647664 /* phone.png */,
+				8B53F04516E3CF4C00647664 /* Default-568h@2x.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		E15076DA16C95F8600D55EDF = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +106,18 @@
 			children = (
 				E15076F816C95F8800D55EDF /* AppDelegate.h */,
 				E15076F916C95F8800D55EDF /* AppDelegate.m */,
+				8B53F04716E3D0F900647664 /* Ticket.h */,
+				8B53F04816E3D0F900647664 /* Ticket.m */,
 				E15076FB16C95F8800D55EDF /* ViewController.h */,
 				E15076FC16C95F8800D55EDF /* ViewController.m */,
 				E15076FE16C95F8800D55EDF /* ViewController.xib */,
+				8B53F04A16E3D64000647664 /* AddTicketViewController.h */,
+				8B53F04B16E3D64000647664 /* AddTicketViewController.m */,
+				8B53F04C16E3D64000647664 /* AddTicketViewController.xib */,
+				8B53F04F16E3D65000647664 /* TicketViewController.h */,
+				8B53F05016E3D65000647664 /* TicketViewController.m */,
+				8B53F05116E3D65000647664 /* TicketViewController.xib */,
+				8B53F05516E3D99E00647664 /* Images */,
 				E15076F016C95F8700D55EDF /* Supporting Files */,
 			);
 			path = "Grinnell-Helpdesk-iOS";
@@ -124,7 +160,7 @@
 		E15076DC16C95F8600D55EDF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = E15076DF16C95F8600D55EDF /* Build configuration list for PBXProject "Grinnell-Helpdesk-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -150,6 +186,10 @@
 			files = (
 				E15076F416C95F8700D55EDF /* InfoPlist.strings in Resources */,
 				E150770016C95F8800D55EDF /* ViewController.xib in Resources */,
+				8B53F04616E3CF4C00647664 /* Default-568h@2x.png in Resources */,
+				8B53F04E16E3D64000647664 /* AddTicketViewController.xib in Resources */,
+				8B53F05316E3D65000647664 /* TicketViewController.xib in Resources */,
+				8B53F05B16E3DFA900647664 /* phone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +203,9 @@
 				E15076F616C95F8800D55EDF /* main.m in Sources */,
 				E15076FA16C95F8800D55EDF /* AppDelegate.m in Sources */,
 				E15076FD16C95F8800D55EDF /* ViewController.m in Sources */,
+				8B53F04916E3D0F900647664 /* Ticket.m in Sources */,
+				8B53F04D16E3D64000647664 /* AddTicketViewController.m in Sources */,
+				8B53F05216E3D65000647664 /* TicketViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +237,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -207,6 +254,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
@@ -220,12 +268,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
