@@ -9,5 +9,6 @@
 #import "Ticket.h"
 
 @implementation Ticket
+@synthesize number, title, status, created, modified, commentsArray, comment;
 
 @end

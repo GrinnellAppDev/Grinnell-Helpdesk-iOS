@@ -23,6 +23,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    Ticket *tic = [[Ticket alloc] init];
+    tic.number = @"000000";
+    tic.title = @"This is my ticket title";
+    tic.modified = [[NSDate alloc] init];
+    tic.created = [[NSDate alloc] initWithTimeIntervalSinceNow:-60*60*24];
+    tic.status =  @"Opened";
+    tic.comment = @"This is the user comment";
+    NSString *a = @"first comment";
+    NSString *b = @"2nd comment";
+    NSString *c = @"3rd comment";
+    NSString *d = @"fourth comment";
+    NSString *e = @"fifth comment";
+    tic.commentsArray = [[NSMutableArray alloc] initWithObjects:a, b, c, d, e, nil];
+    
+    
+    ticketArray = [[NSMutableArray alloc] initWithObjects:tic, nil];
+    
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
     // Add button to add issues
@@ -67,14 +84,16 @@
     
     UITableViewCell *cell = (UITableViewCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 	if (cell == nil) {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:cellIdentifier];
 	}
    
     // Get the article for this cell
     Ticket *currentTicket = [[Ticket alloc] init];
     currentTicket = [ticketArray objectAtIndex:indexPath.row];
-    
+    cell.textLabel.text = currentTicket.title;
+    cell.detailTextLabel.text = currentTicket.number;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
