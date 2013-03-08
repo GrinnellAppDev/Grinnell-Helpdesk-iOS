@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IssuesViewController.h
 //  Grinnell-Helpdesk-iOS
 //
 //  Created by Colin Tremblay on 2/11/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
+@interface IssuesViewController : UIViewController {
     NSMutableArray *ticketArray;
 }
 

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "IssuesViewController.h"
 
 @implementation AppDelegate
 
@@ -19,7 +19,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     //if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+        viewController = [[IssuesViewController alloc] initWithNibName:@"IssuesViewController" bundle:nil];
         navController = [[UINavigationController alloc] initWithRootViewController:viewController];
    /* } else {
         self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];

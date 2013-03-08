@@ -1,17 +1,17 @@
 //
-//  ViewController.m
+//  IssuesViewController.m
 //  Grinnell-Helpdesk-iOS
 //
 //  Created by Colin Tremblay on 2/11/13.
 //  Copyright (c) 2013 __GrinnellAppDev__. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "IssuesViewController.h"
 #import "Ticket.h"
 #import "AddTicketViewController.h"
 #import "TicketViewController.h"
 
-@implementation ViewController
+@implementation IssuesViewController
 @synthesize theTableView, noIssueImage, cellIdentifier;
 
 - (void)didReceiveMemoryWarning {

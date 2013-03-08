@@ -13,9 +13,9 @@
 @end
 
 @implementation AddTicketViewController
+@synthesize machineType, campusMachine, clear, submit, issueDescription, issueTitle, machineTypeArray, machineTypePicker, activeView, scrollView, doneBar, doneButton, campusMachinePicker, campusMachineArray;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -23,16 +23,119 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    machineTypePicker.hidden = YES;
+    campusMachinePicker.hidden = YES;
+    campusMachine.hidden = YES;
+    doneBar.hidden = YES;
+    self.title = @"Submit an Issue";
+    
+    self.machineType.inputView = self.machineTypePicker;
+    self.campusMachine.inputView = self.campusMachinePicker;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+
+#pragma mark UIPicker methods
+- (IBAction)issueTitleDidBeginEditing{
+    self.machineTypePicker.hidden = NO;
+    self.doneBar.hidden = NO;
+    self.machineTypePicker = [[UIPickerView alloc] init];
+}
+
+- (IBAction)machineTypeDidBeginEditing{
+    self.doneBar.hidden = NO;
+    self.machineTypePicker = [[UIPickerView alloc] init];
+    self.machineTypePicker.hidden = NO;
+}
+- (IBAction)campusMachineDidBeginEditing{
+    self.doneBar.hidden = NO;
+    self.campusMachinePicker = [[UIPickerView alloc] init];
+    self.campusMachinePicker.hidden = NO;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    if ([pickerView isEqual:machineTypePicker])
+        return [self.machineTypeArray objectAtIndex:row];
+    else
+        return [self.campusMachineArray objectAtIndex:row];
+}
+
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    if ([pickerView isEqual:machineTypePicker])
+        return self.machineTypeArray.count;
+    else
+        return self.campusMachineArray.count;
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    if ([pickerView isEqual:machineTypePicker])
+        self.machineType.text = [self.machineTypeArray objectAtIndex:row];
+    else
+       self.campusMachine.text = [self.campusMachineArray objectAtIndex:row];
+}
+
+- (IBAction)doneChoosing:(id)sender {
+    [self.machineType resignFirstResponder];
+    [self.campusMachine resignFirstResponder];
+    [self.issueDescription resignFirstResponder];
+    [self.issueTitle resignFirstResponder];
+    self.doneBar.hidden = YES;
+}
+-(void)textViewDidBeginEditing:(UITextView *)textView{
+    self.doneBar.hidden = NO;
+    self.activeView = textView;
+}
+-(void)textViewDidEndEditing:(UITextView *)textView{
+    self.doneBar.hidden = YES;
+    self.activeView = nil;
+    self.machineTypePicker.hidden = YES;
+    self.campusMachinePicker.hidden = YES;
+}
+- (void)registerForKeyboardNotifications {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasShown:) name:UIKeyboardDidShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillBeHidden:) name:UIKeyboardWillHideNotification object:nil];
+}
+
+// Called when the UIKeyboardDidShowNotification is sent.
+- (void)keyboardWasShown:(NSNotification*)aNotification{
+    
+    if(self.activeView){
+        NSDictionary* info = [aNotification userInfo];
+        CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+        
+        UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+        self.scrollView.contentInset = contentInsets;
+        self.scrollView.scrollIndicatorInsets = contentInsets;
+        
+        // If active text field is hidden by keyboard, scroll it so it's visible
+        double offset = kbSize.height/2;
+        offset = self.issueDescription.frame.origin.y - 44;
+        CGPoint scrollPoint = CGPointMake(0.0, offset);
+        [self.scrollView setContentOffset:scrollPoint animated:YES];
+    }
+}
+
+// Called when the UIKeyboardWillHideNotification is sent
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification{
+    CGPoint scrollPoint = CGPointMake(0.0, 0.0);
+    [self.scrollView setContentOffset:scrollPoint animated:YES];
+}
+
+
+
+
 
 @end

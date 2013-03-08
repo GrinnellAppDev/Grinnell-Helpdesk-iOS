@@ -20,8 +20,8 @@
 		E15076F416C95F8700D55EDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E15076F216C95F8700D55EDF /* InfoPlist.strings */; };
 		E15076F616C95F8800D55EDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076F516C95F8700D55EDF /* main.m */; };
 		E15076FA16C95F8800D55EDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076F916C95F8800D55EDF /* AppDelegate.m */; };
-		E15076FD16C95F8800D55EDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076FC16C95F8800D55EDF /* ViewController.m */; };
-		E150770016C95F8800D55EDF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15076FE16C95F8800D55EDF /* ViewController.xib */; };
+		E15076FD16C95F8800D55EDF /* IssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15076FC16C95F8800D55EDF /* IssuesViewController.m */; };
+		E150770016C95F8800D55EDF /* IssuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15076FE16C95F8800D55EDF /* IssuesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +45,9 @@
 		E15076F716C95F8800D55EDF /* Grinnell-Helpdesk-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grinnell-Helpdesk-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		E15076F816C95F8800D55EDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E15076F916C95F8800D55EDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E15076FB16C95F8800D55EDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E15076FC16C95F8800D55EDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E15076FF16C95F8800D55EDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E15076FB16C95F8800D55EDF /* IssuesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssuesViewController.h; sourceTree = "<group>"; };
+		E15076FC16C95F8800D55EDF /* IssuesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssuesViewController.m; sourceTree = "<group>"; };
+		E15076FF16C95F8800D55EDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IssuesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +108,9 @@
 				E15076F916C95F8800D55EDF /* AppDelegate.m */,
 				8B53F04716E3D0F900647664 /* Ticket.h */,
 				8B53F04816E3D0F900647664 /* Ticket.m */,
-				E15076FB16C95F8800D55EDF /* ViewController.h */,
-				E15076FC16C95F8800D55EDF /* ViewController.m */,
-				E15076FE16C95F8800D55EDF /* ViewController.xib */,
+				E15076FB16C95F8800D55EDF /* IssuesViewController.h */,
+				E15076FC16C95F8800D55EDF /* IssuesViewController.m */,
+				E15076FE16C95F8800D55EDF /* IssuesViewController.xib */,
 				8B53F04A16E3D64000647664 /* AddTicketViewController.h */,
 				8B53F04B16E3D64000647664 /* AddTicketViewController.m */,
 				8B53F04C16E3D64000647664 /* AddTicketViewController.xib */,
@@ -185,7 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E15076F416C95F8700D55EDF /* InfoPlist.strings in Resources */,
-				E150770016C95F8800D55EDF /* ViewController.xib in Resources */,
+				E150770016C95F8800D55EDF /* IssuesViewController.xib in Resources */,
 				8B53F04616E3CF4C00647664 /* Default-568h@2x.png in Resources */,
 				8B53F04E16E3D64000647664 /* AddTicketViewController.xib in Resources */,
 				8B53F05316E3D65000647664 /* TicketViewController.xib in Resources */,
@@ -202,7 +202,7 @@
 			files = (
 				E15076F616C95F8800D55EDF /* main.m in Sources */,
 				E15076FA16C95F8800D55EDF /* AppDelegate.m in Sources */,
-				E15076FD16C95F8800D55EDF /* ViewController.m in Sources */,
+				E15076FD16C95F8800D55EDF /* IssuesViewController.m in Sources */,
 				8B53F04916E3D0F900647664 /* Ticket.m in Sources */,
 				8B53F04D16E3D64000647664 /* AddTicketViewController.m in Sources */,
 				8B53F05216E3D65000647664 /* TicketViewController.m in Sources */,
@@ -220,12 +220,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E15076FE16C95F8800D55EDF /* ViewController.xib */ = {
+		E15076FE16C95F8800D55EDF /* IssuesViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E15076FF16C95F8800D55EDF /* en */,
 			);
-			name = ViewController.xib;
+			name = IssuesViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
