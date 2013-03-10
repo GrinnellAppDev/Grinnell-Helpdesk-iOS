@@ -16,6 +16,8 @@
 - (IBAction)issueTitleDidBeginEditing;
 - (IBAction)campusMachineDidBeginEditing;
 - (IBAction)doneChoosing:(id)sender;
+- (IBAction)clearButtonTapped:(id)sender;
+- (IBAction)submitButtonTapped:(id)sender;
 
 
 @property (nonatomic, strong) NSMutableArray *campusMachineArray;

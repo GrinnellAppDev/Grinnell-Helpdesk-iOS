@@ -7,6 +7,7 @@
 //
 
 #import "AddTicketViewController.h"
+#import "Ticket.h"
 
 @interface AddTicketViewController ()
 
@@ -31,7 +32,7 @@
     campusMachine.hidden = YES;
     doneBar.hidden = YES;
     self.title = @"Submit an Issue";
-    
+    [self registerForKeyboardNotifications];
     self.machineType.inputView = self.machineTypePicker;
     self.campusMachine.inputView = self.campusMachinePicker;
 
@@ -42,6 +43,36 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void) alertStatus:(NSString *)msg :(NSString *)title{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
+                                                        message:msg
+                                                       delegate:self
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+- (IBAction)submitButtonTapped:(id)sender{
+    if (![issueTitle.text isEqualToString:@""] && ![issueDescription.text isEqualToString:@""]){
+        Ticket *newTic = [[Ticket alloc] init];
+        newTic.title = issueTitle.text;
+        newTic.comment = issueDescription.text;
+        newTic.number = @"0000001";
+        newTic.status = @"New";
+        newTic.created = [[NSDate alloc] init];
+        newTic.modified = newTic.created;
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else
+        [self alertStatus:@"Please fill all required fields." :@"Error!"];
+}
+
+- (IBAction)clearButtonTapped:(id)sender{
+    self.machineType.text = @"Personal Machine";
+    self.campusMachine.text = @"";
+    self.issueTitle.text = @"";
+    self.issueDescription.text = @"";
+}
 
 #pragma mark UIPicker methods
 - (IBAction)issueTitleDidBeginEditing{
@@ -118,7 +149,7 @@
 
 // Called when the UIKeyboardDidShowNotification is sent.
 - (void)keyboardWasShown:(NSNotification*)aNotification{
-    
+ 
     if(self.activeView){
         NSDictionary* info = [aNotification userInfo];
         CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
@@ -129,12 +160,19 @@
         
         // If active text field is hidden by keyboard, scroll it so it's visible
         double offset = kbSize.height/2;
-        offset = self.issueDescription.frame.origin.y - 44;
+        offset = self.issueDescription.frame.origin.y - 32;
         CGPoint scrollPoint = CGPointMake(0.0, offset);
         [self.scrollView setContentOffset:scrollPoint animated:YES];
     }
 }
-
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField{
+    if (theTextField == self.issueTitle){
+        activeView = self.issueDescription;
+        [theTextField resignFirstResponder];
+        [self.issueDescription becomeFirstResponder];
+    }
+    return YES;
+}
 // Called when the UIKeyboardWillHideNotification is sent
 - (void)keyboardWillBeHidden:(NSNotification*)aNotification{
     CGPoint scrollPoint = CGPointMake(0.0, 0.0);
