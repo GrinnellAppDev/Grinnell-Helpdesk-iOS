@@ -34,6 +34,8 @@
     
     self.machineType.inputView = self.machineTypePicker;
     self.campusMachine.inputView = self.campusMachinePicker;
+
+    self.machineTypeArray = [[NSMutableArray alloc] initWithObjects:@"Personal Machine", @"Campus Computer", @"Campus Printer", @"Other", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,17 +47,16 @@
 - (IBAction)issueTitleDidBeginEditing{
     self.machineTypePicker.hidden = NO;
     self.doneBar.hidden = NO;
-    self.machineTypePicker = [[UIPickerView alloc] init];
 }
 
 - (IBAction)machineTypeDidBeginEditing{
     self.doneBar.hidden = NO;
-    self.machineTypePicker = [[UIPickerView alloc] init];
+  // self.machineTypePicker = [[UIPickerView alloc] init];
     self.machineTypePicker.hidden = NO;
 }
 - (IBAction)campusMachineDidBeginEditing{
     self.doneBar.hidden = NO;
-    self.campusMachinePicker = [[UIPickerView alloc] init];
+   // self.campusMachinePicker = [[UIPickerView alloc] init];
     self.campusMachinePicker.hidden = NO;
 }
 
@@ -80,10 +81,16 @@
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    if ([pickerView isEqual:machineTypePicker])
+    if ([pickerView isEqual:machineTypePicker]){
         self.machineType.text = [self.machineTypeArray objectAtIndex:row];
+        if ([self.machineType.text rangeOfString:@"Campus"].location != NSNotFound)
+            campusMachine.hidden = NO;
+        else
+            campusMachine.hidden = YES;
+    }
     else
        self.campusMachine.text = [self.campusMachineArray objectAtIndex:row];
+    
 }
 
 - (IBAction)doneChoosing:(id)sender {
