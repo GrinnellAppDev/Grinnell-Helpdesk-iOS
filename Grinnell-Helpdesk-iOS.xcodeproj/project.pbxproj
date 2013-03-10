@@ -137,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E15076E416C95F8700D55EDF /* Grinnell-Helpdesk-iOS */ = {
+		E15076E416C95F8700D55EDF /* HelpDesk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E150770616C95F8800D55EDF /* Build configuration list for PBXNativeTarget "Grinnell-Helpdesk-iOS" */;
+			buildConfigurationList = E150770616C95F8800D55EDF /* Build configuration list for PBXNativeTarget "HelpDesk" */;
 			buildPhases = (
 				E15076E116C95F8700D55EDF /* Sources */,
 				E15076E216C95F8700D55EDF /* Frameworks */,
@@ -149,7 +149,7 @@
 			);
 			dependencies = (
 			);
-			name = "Grinnell-Helpdesk-iOS";
+			name = HelpDesk;
 			productName = "Grinnell-Helpdesk-iOS";
 			productReference = E15076E516C95F8700D55EDF /* Grinnell-Helpdesk-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -174,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E15076E416C95F8700D55EDF /* Grinnell-Helpdesk-iOS */,
+				E15076E416C95F8700D55EDF /* HelpDesk */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E150770616C95F8800D55EDF /* Build configuration list for PBXNativeTarget "Grinnell-Helpdesk-iOS" */ = {
+		E150770616C95F8800D55EDF /* Build configuration list for PBXNativeTarget "HelpDesk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E150770716C95F8800D55EDF /* Debug */,
