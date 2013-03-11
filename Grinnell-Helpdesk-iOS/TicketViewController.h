@@ -12,5 +12,8 @@
 @interface TicketViewController : UIViewController
 
 @property (nonatomic, strong) Ticket *ticket;
-
+@property (nonatomic, weak) IBOutlet UILabel *issueTitle;
+@property (nonatomic, weak) IBOutlet UILabel *created;
+@property (nonatomic, weak) IBOutlet UILabel *modified;
+@property (nonatomic, weak) IBOutlet UILabel *status;
 @end

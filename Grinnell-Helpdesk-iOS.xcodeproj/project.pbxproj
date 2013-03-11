@@ -35,7 +35,7 @@
 		8B53F05016E3D65000647664 /* TicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketViewController.m; sourceTree = "<group>"; };
 		8B53F05116E3D65000647664 /* TicketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketViewController.xib; sourceTree = "<group>"; };
 		8B53F05A16E3DFA900647664 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = Images/phone.png; sourceTree = "<group>"; };
-		E15076E516C95F8700D55EDF /* Grinnell-Helpdesk-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grinnell-Helpdesk-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15076E516C95F8700D55EDF /* HelpDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15076E916C95F8700D55EDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E15076EB16C95F8700D55EDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E15076ED16C95F8700D55EDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,7 +86,7 @@
 		E15076E616C95F8700D55EDF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E15076E516C95F8700D55EDF /* Grinnell-Helpdesk-iOS.app */,
+				E15076E516C95F8700D55EDF /* HelpDesk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 			);
 			name = HelpDesk;
 			productName = "Grinnell-Helpdesk-iOS";
-			productReference = E15076E516C95F8700D55EDF /* Grinnell-Helpdesk-iOS.app */;
+			productReference = E15076E516C95F8700D55EDF /* HelpDesk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

@@ -13,7 +13,7 @@
 @end
 
 @implementation TicketViewController
-@synthesize ticket;
+@synthesize ticket, issueTitle, created, modified, status;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,6 +28,13 @@
     [super viewDidLoad];
     
     self.title = [NSString stringWithFormat:@"Issue #%@", ticket.number];
+    issueTitle.text = ticket.title;
+    created.text = [ticket.created descriptionWithCalendarFormat:@"%m-%d-%YYYY"
+                                                        timezone:nil
+                                                          locale:nil];
+//                    descriptionWithLocale:@"%m-%d-%YYYY"];
+    modified.text = [ticket.modified descriptionWithLocale:@"%m-%d-%YYYY"];
+    status.text = ticket.status;
 }
 
 - (void)didReceiveMemoryWarning
