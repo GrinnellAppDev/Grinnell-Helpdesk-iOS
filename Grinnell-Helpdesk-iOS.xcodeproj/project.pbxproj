@@ -14,6 +14,8 @@
 		8B53F05216E3D65000647664 /* TicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B53F05016E3D65000647664 /* TicketViewController.m */; };
 		8B53F05316E3D65000647664 /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B53F05116E3D65000647664 /* TicketViewController.xib */; };
 		8B53F05B16E3DFA900647664 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B53F05A16E3DFA900647664 /* phone.png */; };
+		8BD4272B1711F167006DC9F1 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD427291711F167006DC9F1 /* CommentViewController.m */; };
+		8BD4272C1711F167006DC9F1 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4272A1711F167006DC9F1 /* CommentViewController.xib */; };
 		E15076EA16C95F8700D55EDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076E916C95F8700D55EDF /* UIKit.framework */; };
 		E15076EC16C95F8700D55EDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076EB16C95F8700D55EDF /* Foundation.framework */; };
 		E15076EE16C95F8700D55EDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076ED16C95F8700D55EDF /* CoreGraphics.framework */; };
@@ -35,6 +37,9 @@
 		8B53F05016E3D65000647664 /* TicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketViewController.m; sourceTree = "<group>"; };
 		8B53F05116E3D65000647664 /* TicketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketViewController.xib; sourceTree = "<group>"; };
 		8B53F05A16E3DFA900647664 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = Images/phone.png; sourceTree = "<group>"; };
+		8BD427281711F167006DC9F1 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		8BD427291711F167006DC9F1 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		8BD4272A1711F167006DC9F1 /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
 		E15076E516C95F8700D55EDF /* HelpDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15076E916C95F8700D55EDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E15076EB16C95F8700D55EDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +122,9 @@
 				8B53F04F16E3D65000647664 /* TicketViewController.h */,
 				8B53F05016E3D65000647664 /* TicketViewController.m */,
 				8B53F05116E3D65000647664 /* TicketViewController.xib */,
+				8BD427281711F167006DC9F1 /* CommentViewController.h */,
+				8BD427291711F167006DC9F1 /* CommentViewController.m */,
+				8BD4272A1711F167006DC9F1 /* CommentViewController.xib */,
 				8B53F05516E3D99E00647664 /* Images */,
 				E15076F016C95F8700D55EDF /* Supporting Files */,
 			);
@@ -190,6 +198,7 @@
 				8B53F04E16E3D64000647664 /* AddTicketViewController.xib in Resources */,
 				8B53F05316E3D65000647664 /* TicketViewController.xib in Resources */,
 				8B53F05B16E3DFA900647664 /* phone.png in Resources */,
+				8BD4272C1711F167006DC9F1 /* CommentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +215,7 @@
 				8B53F04916E3D0F900647664 /* Ticket.m in Sources */,
 				8B53F04D16E3D64000647664 /* AddTicketViewController.m in Sources */,
 				8B53F05216E3D65000647664 /* TicketViewController.m in Sources */,
+				8BD4272B1711F167006DC9F1 /* CommentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

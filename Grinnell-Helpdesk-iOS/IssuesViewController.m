@@ -30,12 +30,12 @@
     tic.created = [[NSDate alloc] initWithTimeIntervalSinceNow:-60*60*24];
     tic.status =  @"Opened";
     tic.comment = @"This is the user comment";
-    NSString *a = @"first comment";
+    NSString *a = @"the first comment is super super long because the last TC was incredibly over zealous and now we have a really long comment that wraps onto multiple lines";
     NSString *b = @"2nd comment";
     NSString *c = @"3rd comment";
     NSString *d = @"fourth comment";
     NSString *e = @"fifth comment";
-    tic.commentsArray = [[NSMutableArray alloc] initWithObjects:a, b, c, d, e, nil];
+    tic.commentsArray = [[NSMutableArray alloc] initWithObjects:a, b, c, d, e, tic.comment, nil];
     
     
     ticketArray = [[NSMutableArray alloc] initWithObjects:tic, nil];

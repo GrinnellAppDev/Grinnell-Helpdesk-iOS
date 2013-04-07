@@ -76,7 +76,7 @@
 
 #pragma mark UIPicker methods
 - (IBAction)issueTitleDidBeginEditing{
-    self.machineTypePicker.hidden = NO;
+    self.machineTypePicker.hidden = YES;
     self.doneBar.hidden = NO;
 }
 
