@@ -140,16 +140,12 @@
             if([response statusCode] >= 200 && [response statusCode] < 300){
                 NSString *responseData = [[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
                 NSLog(@"Response ==> %@", responseData);
-                
+                */
                 NSInteger success;
-                if (NSNotFound == [responseData rangeOfString:@"Displaying who is logged in"].location)
-                    success = 0;
-                else
+               // if (NSNotFound == [responseData rangeOfString:@"Displaying who is logged in"].location)
+                 //   success = 0;
+                //else
                     success = 1;
-                
-                
-                //HARDCODE Success
-                success = 1;
                 
                 
                 if(1 == success){
@@ -164,7 +160,7 @@
                     [self alertStatus:nil :@"Login Failed!"];
                 }
                 
-            }
+            /*}
             else{
                 if(error)
                     NSLog(@"Error: %@", error);

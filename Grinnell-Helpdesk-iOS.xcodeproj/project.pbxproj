@@ -108,9 +108,9 @@
 		8B53F05516E3D99E00647664 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3BA7A3691731EA8100FA8F36 /* Icons */,
 				8B53F05A16E3DFA900647664 /* phone.png */,
 				8B53F04516E3CF4C00647664 /* Default-568h@2x.png */,
-				3BA7A3691731EA8100FA8F36 /* Icons */,
 			);
 			name = Images;
 			path = ..;
