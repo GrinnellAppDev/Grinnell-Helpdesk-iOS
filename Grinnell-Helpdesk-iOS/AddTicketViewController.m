@@ -37,6 +37,8 @@
     self.campusMachine.inputView = self.campusMachinePicker;
 
     self.machineTypeArray = [[NSMutableArray alloc] initWithObjects:@"Personal Machine", @"Campus Computer", @"Campus Printer", @"Other", nil];
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"TiledBG.png"]];
 }
 
 - (void)didReceiveMemoryWarning {

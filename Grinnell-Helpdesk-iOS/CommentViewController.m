@@ -28,6 +28,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     commentTextView.text = @"\n\nSent from my iPhone";
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"TiledBG.png"]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -43,6 +43,8 @@
                                                                     target:self
                                                                     action:@selector(createComment:)];
     [self.navigationItem setRightBarButtonItem:commentButton animated:YES];
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"TiledBG.png"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

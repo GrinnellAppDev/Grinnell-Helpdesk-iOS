@@ -24,6 +24,8 @@
 		8B53F05216E3D65000647664 /* TicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B53F05016E3D65000647664 /* TicketViewController.m */; };
 		8B53F05316E3D65000647664 /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B53F05116E3D65000647664 /* TicketViewController.xib */; };
 		8B53F05B16E3DFA900647664 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B53F05A16E3DFA900647664 /* phone.png */; };
+		8BC109BC174B11F8007295CB /* TiledBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC109BB174B11F8007295CB /* TiledBg.png */; };
+		8BC109C4174B19CB007295CB /* NoIssues6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC109C3174B19CB007295CB /* NoIssues6.png */; };
 		8BD4272B1711F167006DC9F1 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD427291711F167006DC9F1 /* CommentViewController.m */; };
 		8BD4272C1711F167006DC9F1 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4272A1711F167006DC9F1 /* CommentViewController.xib */; };
 		E15076EA16C95F8700D55EDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15076E916C95F8700D55EDF /* UIKit.framework */; };
@@ -58,6 +60,8 @@
 		8B53F05016E3D65000647664 /* TicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketViewController.m; sourceTree = "<group>"; };
 		8B53F05116E3D65000647664 /* TicketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketViewController.xib; sourceTree = "<group>"; };
 		8B53F05A16E3DFA900647664 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = Images/phone.png; sourceTree = "<group>"; };
+		8BC109BB174B11F8007295CB /* TiledBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TiledBg.png; sourceTree = "<group>"; };
+		8BC109C3174B19CB007295CB /* NoIssues6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoIssues6.png; sourceTree = "<group>"; };
 		8BD427281711F167006DC9F1 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
 		8BD427291711F167006DC9F1 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
 		8BD4272A1711F167006DC9F1 /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 		8B53F05516E3D99E00647664 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8BC109C3174B19CB007295CB /* NoIssues6.png */,
+				8BC109BB174B11F8007295CB /* TiledBg.png */,
 				3BA7A3691731EA8100FA8F36 /* Icons */,
 				8B53F05A16E3DFA900647664 /* phone.png */,
 				8B53F04516E3CF4C00647664 /* Default-568h@2x.png */,
@@ -248,6 +254,8 @@
 				3BA7A3771731EA9100FA8F36 /* Icon.png in Resources */,
 				3BA7A3781731EA9100FA8F36 /* Icon@2x.png in Resources */,
 				3BA7A3791731EA9100FA8F36 /* iTunesArtwork.png in Resources */,
+				8BC109BC174B11F8007295CB /* TiledBg.png in Resources */,
+				8BC109C4174B19CB007295CB /* NoIssues6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

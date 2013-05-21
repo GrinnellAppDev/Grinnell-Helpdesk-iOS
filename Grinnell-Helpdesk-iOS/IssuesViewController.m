@@ -37,7 +37,6 @@
     NSString *e = @"fifth comment";
     tic.commentsArray = [[NSMutableArray alloc] initWithObjects:a, b, c, d, e, tic.comment, nil];
     
-    
     ticketArray = [[NSMutableArray alloc] initWithObjects:tic, nil];
     
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -62,10 +61,14 @@
     self.title = @"My Issues";
 
     if (ticketArray == nil) {
+        UIImage *noIssues = [UIImage imageNamed: @"NoIssues6.png"];
+        [noIssueImage setImage:noIssues];
         theTableView.hidden = YES;
         noIssueImage.hidden  = NO;
     }
     else {
+        self.theTableView.backgroundColor = [UIColor clearColor];
+        self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"TiledBG.png"]];
         theTableView.hidden = NO;
         noIssueImage.hidden  = YES;
     }
