@@ -39,9 +39,10 @@
 }
 
 - (IBAction)submitComment:(id)sender{
-    if (![commentTextView.text isEqualToString:@"\n\nSent from my iPhone"])
+    if (![commentTextView.text isEqualToString:@"\n\nSent from my iPhone"]){
         //Save the comment
-        ;
+    
+    }
     
     [self dismissModalViewControllerAnimated:YES];
 }

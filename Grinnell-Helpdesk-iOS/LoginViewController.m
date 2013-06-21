@@ -55,7 +55,7 @@
     // It can be called multiple times, for example in the case of a
     // redirect, so each time we reset the data.
     [receivedData setLength:0];
-    CFStringEncoding cfEncoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)
+    CFStringEncoding cfEncoding = CFStringConvertIANACharSetNameToEncoding((__bridge_retained CFStringRef)
                                                                            [response textEncodingName]);
 	encoding = CFStringConvertEncodingToNSStringEncoding(cfEncoding);
     

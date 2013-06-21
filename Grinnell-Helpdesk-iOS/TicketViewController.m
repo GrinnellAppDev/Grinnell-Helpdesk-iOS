@@ -69,6 +69,7 @@
     commentBox.text = comment;
     commentBox.font = [UIFont fontWithName:@"Palatino" size:12];
     commentBox.editable = NO;
+    commentBox.backgroundColor = [UIColor clearColor];
     [scroll addSubview:commentBox];
         sumOfHeights += textViewSize.height + 16;
     
